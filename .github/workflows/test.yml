@@ -48,11 +48,7 @@ jobs:
         - name: helix-editor/helix
           key: helix
           parallel: 2
-    runs-on:
-    - self-hosted
-    - intel-cpu
-    - 8-cpu
-    - ci
+    runs-on: ubuntu-latest
     container:
       image: ubuntu:22.04
     steps:
@@ -121,11 +117,7 @@ jobs:
   comment_results:
     needs:
     - testbed
-    runs-on:
-    - self-hosted
-    - intel-cpu
-    - 8-cpu
-    - ci
+    runs-on: ubuntu-latest
     container:
       image: ubuntu:22.04
     steps:
