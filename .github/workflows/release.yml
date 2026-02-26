@@ -38,7 +38,7 @@ jobs:
     env:
       LLM_LS_TARGET: ${{ matrix.target }}
     name: dist (${{ matrix.target }})
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     container: ${{ matrix.container }}
     steps:
     - name: Checkout repository
